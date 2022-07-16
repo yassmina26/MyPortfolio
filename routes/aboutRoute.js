@@ -17,23 +17,74 @@ router.get('/about',  async (req,res)=>{
 })
  
 // add about user 
-router.post('/about', (req,res)=> {
-    res.send('hello from post router')
+router.post('/about', async (req,res)=> {
+
+        //Getting all the data that there is in the body 
+        const {about} = req.body;
+
+    try {   // we dont want the application to break
+        
+        const newAbout = new aboutSchema({
+            about  // or we can do about:about or about:req.body.about
+       
+        })
+
+        await newAbout.save(); //save the data
+        res.json(newAbout); // see the data that has been saved
+
+    } catch (error) {
+        res.status(500).json({msg:'Server problem'})
+    }
+    
 })
 
 // get specific user by ID
-router.get('/about/:id', (req,res)=> {
-    res.send('hello from specific  post router')
+router.get('/about/:id', async (req,res)=> {
+   
+    try {
+        const about = await aboutSchema.findById(req.params.id);
+        res.json(about);
+
+        
+    } catch (error) {
+
+        res.status(500).json({msg:'Server problem'})
+    }
+    
+
 })
 
 // update specific user by ID
-router.put('/about/update/:id', (req,res)=> {
-    res.send('hello from updated  post router')
+router.put('/about/update/:id', async (req,res)=> {
+    
+    try {
+        const {about} = req.body;
+        const newAbout = await aboutSchema.findByIdAndUpdate(req.params.id, {
+     
+         about
+     
+        });
+        let results = await newAbout.save();
+        await results;
+        res.json({msg:"Item updated"})
+        
+    } catch (error) {
+        res.status(500).json({msg:'Server problem'})
+    }
 })
 
 // delete specific user by ID
-router.delete('/about/:id', (req,res)=> {
-    res.send('hello from delete  post router')
-})
+router.delete('/about/:id', async (req,res)=> {
+  
+   
+    try {
+        const about = await aboutSchema.findByIdAndDelete(req.params.id)
+        about;
+        res.json({msg:"Item deleted"})
+        
+    }catch (error) {
+        res.status(500).json({msg:'Server problem'})
+    }
 
+})
 module.exports = router;
