@@ -8,7 +8,7 @@ exports.getAbout = async (req, res) => {
     
     }catch (error) {
         res.status(500).json({ msg: "Server problem" })
-    }
+    } 
 }
 
 
@@ -37,7 +37,7 @@ exports.getAboutId = async (req, res) => {
 
     try {
         const about = await aboutSchema.findById(req.params.id);
-        res.json(about);
+    res.json(about);
 
     } catch (error) {
         res.status(500).json({ msg: 'Server problem' })
@@ -49,9 +49,8 @@ exports.getAboutId = async (req, res) => {
 
 // update specific  about user by id
 exports.updateAboutId = async (req, res) => {
-
+    const { about } = req.body;
     try {
-        const { about } = req.body;
         const newAbout = await aboutSchema.findByIdAndUpdate(req.params.id, {
             about
         });
