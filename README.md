@@ -1,4 +1,4 @@
-In this demo, you will be discovering, step by step, how to build a personal portfolio with the help of a number of tools that composes MERN stack; MongoDB, ExpressJS, ReactJS and NodeJs.The portfolio will feature information about myself, what projects I have made, what skills I've used in making those projects, certifications I have accompished and will include a contact form for recruiters. 
+In this demo, you will be discovering, step by step, how to build a personal portfolio with the help of a number of tools that composes MERN stack; MongoDB, ExpressJS, ReactJS and NodeJs.The portfolio will feature information about myself, what projects I have made, what skills I've used in making those projects, certifications I have accomplished and will include a contact form for recruiters. 
 
 --------------------------------------------------------------------
 
