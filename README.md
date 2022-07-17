@@ -1,8 +1,8 @@
-In this demo, you will be discovering, step by step, how to build a personal portfolio with the help of a number of tools that composes MERN stack; MongoDB, ExpressJS, ReactJS and NodeJs.The portfolio will feature information about myself, what projects I have made, what skills I've used in making those projects, certifications I have accompished and will include a contact form for recruiters. 
+In this demo, you will be discovering, step by step, how to build a personal portfolio with the help of a number of tools that composes MERN stack; MongoDB, ExpressJS, ReactJS and NodeJs.The portfolio will feature information about myself, what projects I have made, what skills I've used in making those projects, certifications I have accomplished and will include a contact form for recruiters. 
 
 --------------------------------------------------------------------
 
-What Tools Do I Need to Build my Portfolio?
+What tools do you need to build a portfolio like mine?
 
 To go through the entire process of creating our app from start to deployment, you will need to have the following:
 Node.js installed on your computer. You can download it at nodejs.org.
@@ -13,8 +13,8 @@ A free GitHub account at github.com.
 
 ---------------------------------------------------------------------
 
-However, since we're just working with one page, we can within our app component figure out the different components that we need very quickly. We will have a Navbar on top with all of the links to jump to different sections of our portfolio.
+However, since I'm just working with one page, I can within our app component figure out the different components that I need very quickly. It will be shown a Navbar on top with all of the links to jump to different sections of my portfolio.
 
-After that, we will include an about section, a section for our projects, education, experience and finally our contact form.
+After that, It will included an about section, a section for my projects, education, certifications and finally a contact form.
 
 
