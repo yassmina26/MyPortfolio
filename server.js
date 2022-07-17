@@ -28,6 +28,8 @@ mongoose.connect(URI, {
 app.use('/', require('./routes/aboutRoute')); 
 // Education route
 app.use('/', require('./routes/educRoute')); 
+// Projects route
+app.use('/', require('./routes/projectsRoute'));
 
 PORT = process.env.PORT || 5000;
 // Listening on port 5000
