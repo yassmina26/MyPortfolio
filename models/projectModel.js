@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // if we dont create Schema we cant communicate with mongoDB
-const projectsSchema = new mongoose.Schema({
+const projectSchema = new mongoose.Schema({
     Product_id:{
         type:String,
         unique:true,
@@ -23,4 +23,4 @@ const projectsSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('projects', projectsSchema);
+module.exports = mongoose.model('project', projectSchema);

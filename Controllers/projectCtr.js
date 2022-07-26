@@ -32,7 +32,7 @@ exports.addProject = async (req, res) => {
 }
 
 
-// get specific projects user by id
+// get specific project user by id
 exports.getProjectId = async (req, res) => {
 
     try {
