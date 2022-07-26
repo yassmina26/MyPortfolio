@@ -35,7 +35,8 @@ app.use('/', require('./routes/aboutRoute'));
 app.use('/', require('./routes/educRoute'));
 // Certif route
 app.use('/', require('./routes/certifRoute'));
-
+//Projects router
+app.use('/', require('./routes/projectRoute'));
 
 
 PORT = process.env.PORT || 5000;
