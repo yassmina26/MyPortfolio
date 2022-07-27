@@ -2,23 +2,24 @@ const mongoose = require('mongoose');
 
 // if we dont create Schema we cant communicate with mongoDB
 const projectSchema = new mongoose.Schema({
-    Product_id:{
+
+    product_id:{
         type:String,
         unique:true,
         required:true
     },
-    Title:{
+    title:{
         type:String,
-        trim:true,
+        trim:true
     },
-    Description:{
+    description:{
         type:String,
         required:true
+    },
+    images:{
+        type: Object,
+        required: true
     }
-    // Images: {
-    //     type: Object,
-    //     required: true
-    // }
     
 
 })
