@@ -1,6 +1,6 @@
 const aboutSchema = require("../models/aboutModel")
 
-// get  about user
+// get  about 
 exports.getAbout = async (req, res) => {
     const about = await aboutSchema.find();
     try {
@@ -12,7 +12,7 @@ exports.getAbout = async (req, res) => {
 }
 
 
-// add  about user
+// add  about 
 exports.addAbout = async (req, res) => {
 
     //Getting all the data that there is in the body 
@@ -32,7 +32,7 @@ exports.addAbout = async (req, res) => {
 }
 
 
-// get specific about user by id
+// get specific about  by id
 exports.getAboutId = async (req, res) => {
 
     try {
@@ -47,7 +47,7 @@ exports.getAboutId = async (req, res) => {
 }
 
 
-// update specific  about user by id
+// update specific  about  by id
 exports.updateAboutId = async (req, res) => {
     const { about } = req.body;
     try {
@@ -64,7 +64,7 @@ exports.updateAboutId = async (req, res) => {
 }
 
 
-// delete  about user
+// delete  about 
 exports.delAboutId = async (req, res) => {
 
     try {

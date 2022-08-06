@@ -1,7 +1,7 @@
 
 const educationSchema = require('../models/educModel');
 
-// get  education user
+// get  education 
 exports.getEducation = async (req, res) => {
     const education = await educationSchema.find();
     try {
@@ -13,7 +13,7 @@ exports.getEducation = async (req, res) => {
 }
 
 
-// add education user
+// add education 
 exports.addEducation = async (req, res) => {
 
     //Getting all the data that there is in the body 
@@ -33,7 +33,7 @@ exports.addEducation = async (req, res) => {
 }
 
 
-// get specific education user by id
+// get specific education  by id
 exports.getEducationId = async (req, res) => {
 
     try {
@@ -48,7 +48,7 @@ exports.getEducationId = async (req, res) => {
 }
 
 
-// update specific  education user by id
+// update specific  education  by id
 exports.updateEducationId = async (req, res) => {
     const { education } = req.body;
     try {
@@ -65,7 +65,7 @@ exports.updateEducationId = async (req, res) => {
 }
 
 
-// delete  about user
+// delete  about 
 exports.delEducationId = async (req, res) => {
 
     try {

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// if we dont create Schema we cant communicate with mongoDB
+// Create schema to communicate with mongoodb
 const projectSchema = new mongoose.Schema({
 
     product_id:{

@@ -27,7 +27,7 @@ router.post('/project/', async (req, res) => {
         })
 
         await project.save();
-        res.status(200).json({msg:"Project added"})
+        res.json({msg:"Project added"})
 
     } catch (err) {
         res.status(500).json({msg:err})
@@ -47,7 +47,7 @@ router.get("/project/:id", async (req, res) => {
         res.json(project)
 
     } catch (err) {
-        res.status(500).json({ msg: err })
+        res.status(500).json({msg:err})
     }
 })
 
@@ -66,7 +66,7 @@ router.put("/project/:id", async (req, res) => {
 
         })
         await project.save();
-        res.status(200).json({ msg: "Item updated" })
+        res.json({ msg: "Item updated" })
 
     } catch (err) {
         res.status(500).json({ msg: err })

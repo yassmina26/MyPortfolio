@@ -1,6 +1,6 @@
 const certifSchema = require('../models/certifModel');
 
-// get  certif user
+// get  certif 
 exports.getCertif = async (req, res) => {
     const certif = await certifSchema.find();
     try {
@@ -12,7 +12,7 @@ exports.getCertif = async (req, res) => {
 }
 
 
-// add certif user
+// add certif 
 exports.addCertif = async (req, res) => {
 
     //Getting all the data that there is in the body 
@@ -32,7 +32,7 @@ exports.addCertif = async (req, res) => {
 }
 
 
-// get specific certif user by id
+// get specific certif by id
 exports.getCertifId = async (req, res) => {
 
     try {
@@ -47,7 +47,7 @@ exports.getCertifId = async (req, res) => {
 }
 
 
-// update specific  certif user by id
+// update specific  certif  by id
 exports.updateCertifId = async (req, res) => {
     const { certif } = req.body;
     try {
@@ -64,7 +64,7 @@ exports.updateCertifId = async (req, res) => {
 }
 
 
-// delete  certif user
+// delete  certif 
 exports.delCertifId = async (req, res) => {
 
     try {
