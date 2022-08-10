@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Certif = () => {
+const Certifications = () => {
   return (
     <div>Hello from Certif</div>
   )
 }
 
-export default Certif
+export default Certifications;
