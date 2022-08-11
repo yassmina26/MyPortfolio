@@ -4,7 +4,7 @@ import './Header.css';
 export const Header = () => {
   return (
     <div class="header">
-    <a href="#default" class="logo">Yassmine Boukari.</a>
+    <a href="#Home" class="logo">Yassmine Boukari.</a>
     <div class="header-right">
     <a class="active" href="/#About">About</a>
       <a href="/#Projects">Projects</a>
