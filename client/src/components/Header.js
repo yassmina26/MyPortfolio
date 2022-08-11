@@ -3,10 +3,10 @@ import './Header.css';
 
 export const Header = () => {
   return (
-    <div class="header">
+    <div className="header">
     <a href="#Home" class="logo">Yassmine Boukari.</a>
-    <div class="header-right">
-    <a class="active" href="/#About">About</a>
+    <div className="header-right">
+    <a className="active" href="/#About">About</a>
       <a href="/#Projects">Projects</a>
       <a href="/#Certifications">Certifications</a>
       <a href="/#Contact">Contact</a>
