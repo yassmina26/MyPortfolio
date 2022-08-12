@@ -1,11 +1,10 @@
 import { Header } from "./components/Header";
-//import { Portfolio } from "./pages/Portfolio";
-
+import { Portfolio } from "./Page/portfolio";
 function App() {
   return (
     <>
     <Header/>
-    
+    <Portfolio/> 
     </>
   );
 }

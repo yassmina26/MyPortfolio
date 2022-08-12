@@ -1,5 +1,5 @@
 import React from "react";
-//import "./Portfolio.css";
+import "../Page/portfolio.css";
 import Linkdin from "../asserts/linkedin.png";
 import github from "../asserts/github.png";
 import drawkit from "../asserts/DrawKit.png";
@@ -18,36 +18,55 @@ import skillicon8 from '../asserts/skill-icon8.png'
 
 
 export const Portfolio = () => {
-    return (
-      <div className="porfolio">
-        <div className="hero-section main">
-          <div className="text-area">
-            <h1 className="Heading">Hi, I’m Yassmine Boukari.</h1>
-            <p className="description">
-              A fifth-year engineering student who trying to specialize in Cloud
-              Computing.
-            </p>
-            <div className="contact-btn">
-              <button> Contact me! </button>
-            </div>
-            <div className="icons">
-             <a href="https://www.linkedin.com/in/yassmineboukari/">
-              <span className="linkdin-icon">
-                <img src={Linkdin} alt="" />
-              </span>
-              </a>
-  
-              <a href="https://github.com/yassmina26">
-              <span className="github">
-                <img src={github} alt="" />
-              </span>
-              </a>
-            </div>
+  return (
+    <div className="porfolio">
+      <div className="hero-section main">
+        <div className="text-area">
+          <h1 className="Heading">Hi, I’m Yassmine Boukari.</h1>
+          <p className="description">
+            A fifth-year engineering student who trying to specialize in Cloud
+            Computing.
+          </p>
+          <div className="connect-btn">
+            <button> Contact me! </button>
           </div>
-          <div className="img-area">
+          <div className="icons">
+           <a href="https://www.linkedin.com/in/yassmineboukari/">
+            <span className="linkdin-icon">
+              <img src={Linkdin} alt="" />
+            </span>
+            </a>
+
+            <a href="https://github.com/yassmina26">
+            <span className="github">
+              <img src={github} alt="" />
+            </span>
+            </a>
+          </div>
+        </div>
+        <div className="img-area">
           <img src={drawkit} alt="" />
         </div>
       </div>
+
+      <div className="hero-section" id="About">
+        <div className="image-area text-area about">
+          <p className="Heading">About.</p>
+          <img src={aboutImg} alt="" />
+        </div>
+        <div className="text-area2">
+          <p className="p1">
+            My name is <span> Yassmine Boukari.</span> Currently a student at
+            the National School Of Applied Sciences in Marrakech. I’m looking to
+            start a new career and develop my skills in the{" "}
+            <span> Cloud Computing </span> industry.
+          </p>
+          <p className="p2">
+            With the combination of a positive mindset and the right skill-set,
+            I would feel very thrilled to contribute to building innovative and
+            adapted solutions.
+          </p>
+        </div>
       </div>
- )
- }
+</div>
+  )}

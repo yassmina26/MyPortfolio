@@ -1,0 +1,11 @@
+*{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "asap";
+    src: url(../font/Asap-VariableFont_wght.ttf);
+}
+
+.porfolio{
+    margin-bottom: 8rem;
