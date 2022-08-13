@@ -68,5 +68,70 @@ export const Portfolio = () => {
           </p>
         </div>
       </div>
-</div>
-  )}
+      <div className="hero-section" id="Projects">
+        <div className="image-area text-area about">
+          <p className="Heading">Projects.</p>
+          <div className="description-part1">
+            <div className="heading">
+              <p className="Ai">Artificial Intelligence.</p>
+              <p className="des">
+                Built a “Teachable Machine” for image classification.{" "}
+              </p>
+              <div className="connect-btn detail-btn">
+                <button> Show details</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="description-part1">
+            <div className="heading">
+              <p className="Ai">Automation. </p>
+              <p className="des">
+                Automated setup of 3 tier application locally.{" "}
+              </p>
+              <div className="connect-btn detail-btn">
+                <button> Show details</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="description-part1">
+            <div className="heading">
+              <p className="Ai">Cloud Implementation. </p>
+              <p className="des">Lift & shift web application on AWS cloud.</p>
+              <div className="connect-btn detail-btn">
+                <button> Show details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="img-area1">
+          <img src={projectImg} alt="" />
+        </div>
+      </div>
+
+      <center>
+        <div className="connect-btn detail-btn moreproject-btn">
+          <button> More Projects</button>
+        </div>
+      </center>
+
+      <div className="Heading cert" id="Certifications">Certifications</div>
+     
+      <div className="hero-section hero-section-cer ">
+        <div className="hero-section certification">
+          <div className="material">
+            <div className="box">
+              <span className="img">
+                <img src={certficationImg1} alt="" />
+              </span>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+)}
+
+
+        
