@@ -31,13 +31,13 @@ export const Portfolio = () => {
             <button> Contact me! </button>
           </div>
           <div className="icons">
-           <a href="https://www.linkedin.com/in/yassmineboukari/">
+           <a href="https://www.linkedin.com/in/yassmineboukari/" target="_blank" rel="noreferrer">
             <span className="linkdin-icon">
               <img src={Linkdin} alt="" />
             </span>
             </a>
 
-            <a href="https://github.com/yassmina26">
+            <a href="https://github.com/yassmina26" target="_blank" rel="noreferrer">
             <span className="github">
               <img src={github} alt="" />
             </span>
