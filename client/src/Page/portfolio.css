@@ -211,12 +211,12 @@ color: #000000;
 }
 
 .hero-section .skill-icon{
-    flex: 25%;
-    margin-bottom: 2rem;
+    flex: 23%;
+    margin-bottom: 7rem;
 }
 
 .hero-section-skill-icon{
-    margin-left: 9rem;
+    margin-left: 16rem;
 }
 
 .click-away{
