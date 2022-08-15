@@ -78,7 +78,10 @@ export const Portfolio = () => {
                 Built a “Teachable Machine” for image classification.{" "}
               </p>
               <div className="connect-btn detail-btn">
-                <button> Show details</button>
+              <a href="https://github.com/yassmina26/Teachable-machine" target="_blank" rel="noreferrer">
+          <button>Show details</button>
+        </a>
+              
               </div>
             </div>
           </div>
@@ -90,7 +93,9 @@ export const Portfolio = () => {
                 Automated setup of 3 tier application locally.{" "}
               </p>
               <div className="connect-btn detail-btn">
-                <button> Show details</button>
+              <a href="https://google.com" target="_blank" rel="noreferrer">
+          <button>Show details</button>
+        </a>
               </div>
             </div>
           </div>
@@ -100,7 +105,9 @@ export const Portfolio = () => {
               <p className="Ai">Cloud Implementation. </p>
               <p className="des">Lift & shift web application on AWS cloud.</p>
               <div className="connect-btn detail-btn">
-                <button> Show details</button>
+              <a href="https://google.com" target="_blank" rel="noreferrer">
+          <button>Show details</button>
+        </a>
               </div>
             </div>
           </div>
@@ -113,7 +120,9 @@ export const Portfolio = () => {
 
       <center>
         <div className="connect-btn detail-btn moreproject-btn">
-          <button> More Projects</button>
+        <a href="https://github.com/yassmina26" target="_blank" rel="noreferrer">
+          <button>More projects</button>
+        </a>
         </div>
       </center>
 
@@ -128,10 +137,78 @@ export const Portfolio = () => {
               </span>
             </div>
           </div>
-          </div>
-          </div>
-          </div>
-)}
 
+          <div className="Text">
+            <span className="text">
+              Building Cloud-Native and Multicloud Applications.
+            </span>
+            <div className="connect-btn show-cre">
+            <a href="https://www.credly.com/earner/earned/badge/e89ca46c-6db7-44ae-a9c3-397733feb336" target="_blank" rel="noreferrer">
+          <button>Show credentials</button>
+        </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-section certification">
+          <div className="material">
+            <div className="box">
+              <span className="img">
+                <img src={certficationImg2} alt="" />
+              </span>
+            </div>
+          </div>
+
+          <div className="Text">
+            <span className="text">
+            Docker Essentials: A Developer Introduction.
+            </span>
+            <div className="connect-btn show-cre">
+            <a href="https://www.credly.com/earner/earned/badge/6ce9696f-efd8-4a9a-8bc7-d87242718f56" target="_blank" rel="noreferrer">
+          <button>Show credentials</button>
+        </a>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <center>
+        <div className="connect-btn detail-btn moreproject-btn">
+        <a href="" target="_blank" rel="noreferrer">
+          <button>Show more</button>
+        </a>
+        
+        </div>
+      </center>
+     
+      <div className="Heading cert">Skills</div>
+
+            <div className="hero-section hero-section-skill-icon " id="Contact" >
+            <div className="skill-icon">    <img src={skillicon1} alt="" /></div>
+            <div className="skill-icon">    <img src={skillicon2} alt=""  /></div>
+            <div className="skill-icon">    <img src={skillicon3} alt="" /></div>
+            <div className="skill-icon">    <img src={skillicon4} alt="" /></div>
+            <div className="skill-icon">    <img src={skillicon5} alt="" /></div>
+            <div className="skill-icon">    <img src={skillicon6} alt="" /></div>
+            <div className="skill-icon">    <img src={skillicon7} alt=""  /></div>
+            <div className="skill-icon">    <img src={skillicon8} alt="" /></div>
+
+            </div>
+    
+     <div className="bottom-text">
+        <center>
+            <p className="Heading click-away"> I am just a click away. </p>
+        </center>
+       <center> <div className="welcome">I would welcome any valuable opportunity.</div> </center>
+     <center>
+        <div className="connect-btn b-btn">
+          <button> Contact me!</button>
+        </div>
+      </center>
+     </div>
+    </div>
+
+  );
+};
 
         

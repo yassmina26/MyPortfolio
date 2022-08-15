@@ -10,6 +10,15 @@
 .porfolio{
     margin-bottom: 8rem;
 }
+.particle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.particleComp{
+    background-color: rgb(17,115,145);
+}
 .hero-section{
     display: flex;
     flex-wrap: wrap;
@@ -31,13 +40,14 @@ font-size: 46px;
 line-height: 58px;
 color: #000000;
 }
+
 .Heading::before {
     content: "";
     width: 133px;
     height: 13px;
     background: #6DC8C2;
     position: absolute;
-    margin-top: 55px;
+    margin-top: 60px;
 }
 
 .text-area .description{
@@ -53,7 +63,7 @@ margin-top: 4rem;
 }
 
 .connect-btn button{
-    width: 139.5px;
+    width: 180px;
     height: 42px;
     background: #FFBB45;
     border-radius: 20px;
@@ -62,8 +72,200 @@ margin-top: 4rem;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
     color: #000000;
     cursor: pointer;
+}
+
+.icons{
+    margin-top: 2rem;
+}
+
+.icons .linkdin-icon{
+    margin-right: 1rem;
+}
+
+.icons img{
+    width: 51.75px;
+height: 52.34px;
+cursor: pointer;
+}
+
+.img-area img{
+    margin-top: 3rem;
+}
+
+.about p{
+font-family: 'asap';
+font-style: normal;
+font-weight: 700;
+font-size: 46px;
+line-height: 58px;
+color: #000000;
+}
+
+.text-area2{
+    /* flex: 50%; */
+    flex-direction: column;
+}
+
+.text-area2{
+    margin-top: 11rem;
+}
+
+.text-area2 p{
+    font-family: 'asap';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 533.28px;
+}
+
+.text-area2 span{
+    font-weight: bold;
+}
+
+.description-part1 .heading .Ai{
+    font-family: 'asap';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 45px;
+color: #000000;
+}
+
+.description-part1 .heading .des{
+font-family: 'asap';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+text-transform: capitalize;
+color: #000000;
+}
+
+.detail-btn button{
+    font-weight: 400;
+}
+
+.img-area1{
+    flex: 50%; 
+}
+
+.img-area1 img{
+    margin-top: 27rem;
+    margin-left: -4rem;
+}
+
+.moreproject-btn button{
+    margin-top: 4rem;
+}
+
+.cert{
+    font-family: 'asap';
+font-style: normal;
+font-weight: 700;
+font-size: 46px;
+line-height: 58px;
+
+color: #000000;
+}
+
+.cert{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.certification{
+    flex-direction: row;
+    margin-left: 8rem;
+}
+
+.Text{
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.Text .text{
+    font-family: 'asap';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.show-cre{
+    margin-top: 28px;
+}
+
+.show-cre button{
+    font-weight: 40 ;
+}
+
+.hero-section-cer{
+    margin-top: 0rem;
+}
+
+.hero-section .skill-icon{
+    flex: 25%;
+    margin-bottom: 2rem;
+}
+
+.hero-section-skill-icon{
+    margin-left: 9rem;
+}
+
+.click-away{
+font-family: 'asap';
+font-style: normal;
+font-weight: 700;
+font-size: 46px;
+line-height: 58px;
+color: #000000;
+}
+
+.welcome{
+    font-family: 'asap';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+
+.b-btn{
+    margin-top: 2rem;
+}
+
+@media (max-width:992px){
+    .img-area1 img {
+    margin-top: 3rem;
+}
+
+.hero-section{
+    margin-left: 7px;
+    margin-right: 1rem;
+}
+
+.text-area2 {
+    margin-top: 1rem;
+}
+
+.certification {
+   margin-left:0;
+}
+
+.Text {
+    margin-left: 1rem;
+}
+
+.hero-section .skill-icon {
+    flex: 50% 1;
+ }
+
 }
