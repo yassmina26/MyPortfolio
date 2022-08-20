@@ -1,11 +1,14 @@
 import { Header } from "./components/Header";
 import { Portfolio } from "./Page/portfolio";
+import Paricle from "./components/particle";
+import ContactModal from "./components/Modal";
+
 function App() {
   return (
-    <>
-    <Header/>
-    <Portfolio/> 
-    </>
+    <div>
+      <Header />
+      <Portfolio />
+    </div>
   );
 }
 

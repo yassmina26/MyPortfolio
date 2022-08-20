@@ -1,20 +1,24 @@
 .header {
-    overflow: hidden;
-    /* background-color: #f1f1f1; */
-    padding: 20px 10px;
-  
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
 
-  /* Style the header links */
-.header a {
-  float: left;
+/* Style the header links */
+.header-right a {
   color: black;
+  padding-left: 17px;
   text-align: center;
-  padding: 12px;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 4px;
+  transition: 0.3s all;
+}
+.header-right a:hover {
+  color: #fcab1f;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -30,39 +34,63 @@
 } */
 
 /* Style the active/current link*/
-.header a.active {
-  background-color: white;
-  color: black;
-}
 
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-  .header a.active {
-  background-color: blue;
-  color: white;
-}
-}
-
-@media(min-width: 800px) {
   .header {
-  margin-left: 4rem;
-  margin-right: 5rem;
-
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .header-right > a {
+    font-size: 14px;
+  }
+  .hero-section {
+    flex-direction: column-reverse !important;
+  }
+  .text-area,
+  .img-area {
+    width: 100% !important;
+  }
+  .img-area {
+    justify-content: center !important;
+    margin-bottom: 20px;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80% !important;
+    margin-top: 10px;
+  }
+  .img-area > img {
+    width: 100%;
+  }
+  .projets {
+    width: 100%;
+  }
+  .right-projects {
+    display: none !important;
+  }
+  .certifications {
+    flex-direction: column !important;
+  }
+  .container {
+    padding: 10px;
+  }
+  .Heading::before {
+    content: "";
+    width: 50px;
+    height: 7px !important;
+    background: #6dc8c2;
+    position: absolute;
+    margin-top: 40px !important;
+  }
+  .text {
+    text-align: center;
+  }
+  .modal-container {
+    width: 90% !important;
+  }
 }
-
-}
-  
-  

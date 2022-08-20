@@ -1,271 +1,380 @@
-*{
-    overflow-x: hidden;
-}
-
 @font-face {
-    font-family: "asap";
-    src: url(../font/Asap-VariableFont_wght.ttf);
+  font-family: "asap";
+  src: url(../font/Asap-VariableFont_wght.ttf);
 }
 
-.porfolio{
-    margin-bottom: 8rem;
-}
-.particle{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.particleComp{
-    background-color: rgb(17,115,145);
-}
-.hero-section{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 5rem;
-    margin-right: 6rem;
-    margin-top: 4rem;
-}
-   
-.text-area{
-    flex: 50%;
-    flex-direction: column;
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 60px 0;
 }
 
-.text-area .Heading{
-font-family: 'asap';
-font-style: normal;
-font-weight: 700;
-font-size: 46px;
-line-height: 58px;
-color: #000000;
+.text-area {
+  width: 50%;
+  flex-direction: column;
 }
-
+.Heading {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
 .Heading::before {
-    content: "";
-    width: 133px;
-    height: 13px;
-    background: #6DC8C2;
-    position: absolute;
-    margin-top: 60px;
+  content: "";
+  width: 50px;
+  height: 13px;
+  background: #6dc8c2;
+  position: absolute;
+  margin-top: 50px;
 }
 
-.text-area .description{
-    font-family: 'asap';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-color: #000000;
-width: 25rem;
-margin-top: 4rem;
-    margin-bottom: 3rem;
+.description {
+  font-family: "asap";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 90%;
 }
 
-.connect-btn button{
-    width: 180px;
-    height: 42px;
-    background: #FFBB45;
-    border-radius: 20px;
-    border: none;
-    font-family: 'asap';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
+.connect-btn button {
+  padding: 10px 40px;
+  background: #ffbb45;
+  border-radius: 20px;
+  border: none;
+  font-family: "asap";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
 }
 
-.icons{
-    margin-top: 2rem;
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.icons .linkdin-icon{
-    margin-right: 1rem;
+.icons .linkdin-icon {
+  margin-right: 1rem;
 }
 
-.icons img{
-    width: 51.75px;
-height: 52.34px;
-cursor: pointer;
+.icons img {
+  width: 51.75px;
+  height: 52.34px;
+  cursor: pointer;
+}
+.img-area {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.img-area img{
-    margin-top: 3rem;
+#About {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.about p{
-font-family: 'asap';
-font-style: normal;
-font-weight: 700;
-font-size: 46px;
-line-height: 58px;
-color: #000000;
+.img-area > img {
+  width: 80%;
 }
-
-.text-area2{
-    /* flex: 50%; */
-    flex-direction: column;
-}
-
-.text-area2{
-    margin-top: 11rem;
-}
-
-.text-area2 p{
-    font-family: 'asap';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-    width: 533.28px;
-}
-
-.text-area2 span{
-    font-weight: bold;
-}
-
-.description-part1 .heading .Ai{
-    font-family: 'asap';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 45px;
-color: #000000;
-}
-
-.description-part1 .heading .des{
-font-family: 'asap';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-text-transform: capitalize;
-color: #000000;
-}
-
-.detail-btn button{
-    font-weight: 400;
-}
-
-.img-area1{
-    flex: 50%; 
-}
-
-.img-area1 img{
-    margin-top: 27rem;
-    margin-left: -4rem;
-}
-
-.moreproject-btn button{
-    margin-top: 4rem;
-}
-
-.cert{
-    font-family: 'asap';
-font-style: normal;
-font-weight: 700;
-font-size: 46px;
-line-height: 58px;
-
-color: #000000;
-}
-
-.cert{
-    margin-left: 5rem;
-    margin-top: 2rem;
-}
-
-.certification{
-    flex-direction: row;
-    margin-left: 8rem;
-}
-
-.Text{
-    margin-left: 3rem;
-    margin-top: 2rem;
-}
-
-.Text .text{
-    font-family: 'asap';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-}
-
-.show-cre{
-    margin-top: 28px;
-}
-
-.show-cre button{
-    font-weight: 40 ;
-}
-
-.hero-section-cer{
-    margin-top: 0rem;
-}
-
-.hero-section .skill-icon{
-    flex: 23%;
-    margin-bottom: 7rem;
-}
-
-.hero-section-skill-icon{
-    margin-left: 16rem;
-}
-
-.click-away{
-font-family: 'asap';
-font-style: normal;
-font-weight: 700;
-font-size: 46px;
-line-height: 58px;
-color: #000000;
-}
-
-.welcome{
-    font-family: 'asap';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-
-color: #000000;
-}
-
-.b-btn{
-    margin-top: 2rem;
-}
-
-@media (max-width:992px){
-    .img-area1 img {
-    margin-top: 3rem;
-}
-
-.hero-section{
-    margin-left: 7px;
-    margin-right: 1rem;
-}
-
 .text-area2 {
-    margin-top: 1rem;
+  flex: 1;
+  font-size: 20px;
+  line-height: 31px;
 }
 
-.certification {
-   margin-left:0;
+.about p {
+  font-family: "asap";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 58px;
+  color: #000000;
+}
+
+.detail-btn button {
+  font-weight: 400;
+}
+
+.img-area1 {
+  flex: 50%;
+}
+
+.img-area1 img {
+  margin-top: 27rem;
+  margin-left: -4rem;
+}
+
+.moreproject-btn button {
+  margin-top: 4rem;
+}
+
+.cert {
+  font-family: "asap";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 58px;
+
+  color: #000000;
 }
 
 .Text {
-    margin-left: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 9px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-section .skill-icon {
-    flex: 50% 1;
- }
+.show-cre button {
+  font-weight: 40;
+}
 
+.hero-section-cer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.certifications {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 60px;
+}
+.certification {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cert-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-img > img {
+  height: 60%;
+}
+.img-cert {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+.img-cert > img {
+  height: 50%;
+}
+.skill-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 24%;
+}
+
+.hero-section-skill-icon {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.click-away {
+  font-family: "asap";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 58px;
+  color: #000000;
+}
+
+.welcome {
+  font-family: "asap";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.b-btn {
+  margin-top: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact_btn {
+  transition: 0.5s all;
+  cursor: pointer;
+  padding: 7px 40px;
+  background: #ffbb45;
+  border-radius: 20px;
+  border: none;
+  font-family: "asap";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0px 0px 15px -3px #ffd07f;
+}
+
+.contact_btn:hover {
+  transform: scale(1.05);
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+}
+.about > img {
+  width: 90%;
+}
+
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.description-part1 {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #e2e8f0;
+  box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.1);
+}
+.Ai {
+  font-size: 18px;
+  font-weight: 600;
+}
+.des {
+  margin: 7px 0;
+}
+.show_more {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-projects {
+  width: 50%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@keyframes beating {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  60% {
+    transform: scale(1.03);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.right-projects > img {
+  height: 95%;
+  animation: beating 2s infinite;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.modal-container {
+  width: 50%;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.modal-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.modal-header > h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.input {
+  width: 100%;
+  display: block;
+  margin-top: 25px;
+  background: #e2e8f0;
+  padding: 10px 7px;
+  border-radius: 10px;
+  border: 1px solid #94a3b8;
+}
+.input::placeholder {
+  font-size: 14px;
+}
+.form-container {
+  margin-top: 30px;
+}
+
+.submit {
+  color: #000;
+  padding: 7px 20px;
+  background-color: #ffbb45;
+  border-radius: 10px;
+  margin-top: 30px;
 }
