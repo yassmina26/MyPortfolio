@@ -6,9 +6,8 @@ const { getAbout, getAboutId, updateAboutId, delAboutId, addAbout } = require('.
 
 //const aboutSchema = require('../models/aboutModels');
 
-//....about....in order to test this part, I do it on postman 
 
-// get request in order to get the about 
+// get request 
 router.get('/about', getAbout)
 
 // add about user 

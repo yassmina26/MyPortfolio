@@ -4,7 +4,7 @@ const projectSchema = require('../models/projectModel');
 
 
 // get project
-router.get("/project", async (req, res) => {
+router.get("/projects", async (req, res) => {
     try {
         const project = await projectSchema.find(req.body);
         res.json(project);
@@ -16,7 +16,7 @@ router.get("/project", async (req, res) => {
 
 
 // add project
-router.post('/project/', async (req, res) => {
+router.post('/projects/', async (req, res) => {
     const { product_id, title, description, images } = req.body;
     try {
         const project = new projectSchema({
@@ -40,7 +40,7 @@ router.post('/project/', async (req, res) => {
 
 
 // get specific project by id
-router.get("/project/:id", async (req, res) => {
+router.get("/projects/:id", async (req, res) => {
     try {
 
         let project = await projectSchema.findById(req.params.id)
@@ -55,7 +55,7 @@ router.get("/project/:id", async (req, res) => {
 
 
 // update project
-router.put("/project/:id", async (req, res) => {
+router.put("/projects/:id", async (req, res) => {
     const { product_id, title, description, images } = req.body
     try {
         const project = await projectSchema.findByIdAndUpdate(req.params.id, {
@@ -74,8 +74,9 @@ router.put("/project/:id", async (req, res) => {
     }
 })
 
+
 // delete project
-router.delete("/project/:id", async (req, res) => {
+router.delete("/projects/:id", async (req, res) => {
     let project = await projectSchema.findByIdAndDelete(req.params.id);
     try {
         await project
