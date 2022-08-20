@@ -17,28 +17,12 @@ import skillicon7 from "../asserts/skill-icon7.png";
 import skillicon8 from "../asserts/skill-icon8.png";
 import ContactModal from "../components/Modal";
 import Typical from "react-typical";
-import Paricle from "../components/particle";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 export const Portfolio = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [aboutData, setAboutData] = useState([]);
-  const fetchAboutData = async () => {
-    try {
-      const resp = await fetch("http://localhost:5000/about", {
-        method: "GET",
-      });
-      const respJson = await resp.json();
-      setAboutData(respJson);
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
-  useEffect(() => {
-    fetchAboutData();
-  }, []);
-  console.log(aboutData);
   return (
     <>
       <div className="porfolio">
