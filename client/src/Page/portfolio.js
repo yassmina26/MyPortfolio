@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Page/portfolio.css";
 import Linkdin from "../asserts/linkedin.png";
 import github from "../asserts/github.png";
@@ -23,6 +23,22 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 export const Portfolio = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [aboutData, setAboutData] = useState([]);
+  const fetchAboutData = async () => {
+    try {
+      const resp = await fetch("http://localhost:5000/about", {
+        method: "GET",
+      });
+      const respJson = await resp.json();
+      setAboutData(respJson);
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
+  useEffect(() => {
+    fetchAboutData();
+  }, []);
+  console.log(aboutData);
   return (
     <>
       <div className="porfolio">
