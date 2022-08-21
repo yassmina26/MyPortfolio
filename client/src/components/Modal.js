@@ -16,7 +16,7 @@ const ContactModal = ({ onClose }) => {
     <div className="modal">
       <div className="modal-container">
         <div className="modal-header">
-          <h1>Contact Form</h1>
+          <h1>I would love to hear from you.</h1>
           <GrFormClose size={24} cursor="pointer" onClick={onClose} />
         </div>
         <Formik
@@ -32,16 +32,16 @@ const ContactModal = ({ onClose }) => {
           })}
           onSubmit={(values, { resetForm }) => {
             const templateParams = {
-              name: values.full_name,
+              from_name: values.full_name,
               email: values.email,
               message: values.message,
             };
             emailjs
               .send(
-                "service_ina8qcg",
-                "template_5n083cy",
+                "service_7hwslcp", // email services:service ID 
+                "template_lv7gx5t", // email template: template tenancy 
                 templateParams,
-                "a_37_l14GX76Wg8Th"
+                "a_37_l14GX76Wg8Th" // account:general:public key
               )
               .then(
                 (result) => {

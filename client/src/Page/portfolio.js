@@ -7,19 +7,16 @@ import aboutImg from "../asserts/about.png";
 import projectImg from "../asserts/project.png";
 import certficationImg1 from "../asserts/cert1.png";
 import certficationImg2 from "../asserts/cert2.png";
-import skillicon1 from "../asserts/skill-icon1.png";
-import skillicon2 from "../asserts/skill-icon2.png";
-import skillicon3 from "../asserts/skill-icon3.png";
-import skillicon4 from "../asserts/skill-icon4.png";
-import skillicon5 from "../asserts/skill-icon5.png";
-import skillicon6 from "../asserts/skill-icon6.png";
-import skillicon7 from "../asserts/skill-icon7.png";
-import skillicon8 from "../asserts/skill-icon8.png";
 import ContactModal from "../components/Modal";
 import Typical from "react-typical";
-import { HiArrowNarrowRight } from "react-icons/hi";
 
-import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { FiLinkedin, FiGithub} from "react-icons/fi";
+import { FaAws, FaDocker} from "react-icons/fa";
+import { SiApachetomcat, SiVagrant, SiAnsible, SiMysql, SiVirtualbox} from "react-icons/si";
+import { DiJenkins} from "react-icons/di";
+
+
 export const Portfolio = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [aboutData, setAboutData] = useState([]);
@@ -40,10 +37,10 @@ export const Portfolio = () => {
                 A fifth-year engineering student who trying to specialize in
                 Cloud Computing.
               </p>
-              <button className="contact_btn" onClick={() => setIsOpen(true)}>
+              {/* <button className="contact_btn" onClick={() => setIsOpen(true)}>
                 {" "}
                 Contact me!{" "}
-              </button>
+              </button> */}
 
               <div className="icons">
                 <a
@@ -55,7 +52,7 @@ export const Portfolio = () => {
                 </a>
 
                 <a
-                  href="https://github.com/yassmina26"
+                  href="https://github.com/yassmina26?tab=repositories"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -129,7 +126,7 @@ export const Portfolio = () => {
                   </p>
                   <a
                     className="show_more"
-                    href="https://github.com/yassmina26/Teachable-machine"
+                    href="https://github.com/yassmina26/Setup-Web-Application-Stack"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -150,7 +147,7 @@ export const Portfolio = () => {
                   </p>
                   <a
                     className="show_more"
-                    href="https://github.com/yassmina26/Teachable-machine"
+                    href="https://google.com"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -173,7 +170,7 @@ export const Portfolio = () => {
         <center>
           <div className="connect-btn detail-btn moreproject-btn">
             <a
-              href="https://github.com/yassmina26"
+              href="https://github.com/yassmina26?tab=repositories"
               target="_blank"
               rel="noreferrer"
             >
@@ -199,7 +196,7 @@ export const Portfolio = () => {
                   </span>
                   <a
                     className="show_more"
-                    href="https://github.com/yassmina26/Teachable-machine"
+                    href="https://www.credly.com/badges/e89ca46c-6db7-44ae-a9c3-397733feb336/public_url"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -222,7 +219,7 @@ export const Portfolio = () => {
                   </span>
                   <a
                     className="show_more"
-                    href="https://github.com/yassmina26/Teachable-machine"
+                    href="https://www.credly.com/badges/6ce9696f-efd8-4a9a-8bc7-d87242718f56/public_url"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -239,7 +236,9 @@ export const Portfolio = () => {
 
           <center>
             <div className="connect-btn detail-btn moreproject-btn">
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/yassmineboukari/details/certifications/"
+                 target="_blank"
+                 rel="noreferrer">
                 <button>Show more</button>
               </a>
             </div>
@@ -252,35 +251,35 @@ export const Portfolio = () => {
           <div className="hero-section-skill-icon " id="Contact">
             <div className="skill-icon">
               {" "}
-              <img src={skillicon1} alt="" />
+              <FaAws size={70}  alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon2} alt="" />
+              <SiApachetomcat size={70}  alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon3} alt="" />
+              <SiVagrant size={70}  alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon4} alt="" />
+              <DiJenkins size={70} alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon5} alt="" />
+              <SiAnsible size={70} alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon6} alt="" />
+              <SiMysql size={70} alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon7} alt="" />
+              <SiVirtualbox size={70} alt="" />
             </div>
             <div className="skill-icon">
               {" "}
-              <img src={skillicon8} alt="" />
+              <FaDocker size={70} alt="" />
             </div>
           </div>
         </div>
