@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../Page/portfolio.css";
-import Linkdin from "../asserts/linkedin.png";
-import github from "../asserts/github.png";
 import drawkit from "../asserts/DrawKit.png";
 import aboutImg from "../asserts/about.png";
-import projectImg from "../asserts/project.png";
 import certficationImg1 from "../asserts/cert1.png";
 import certficationImg2 from "../asserts/cert2.png";
 import ContactModal from "../components/Modal";
-import Typical from "react-typical";
 
+import Typical from "react-typical";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FiLinkedin, FiGithub} from "react-icons/fi";
 import { FaAws, FaDocker} from "react-icons/fa";
