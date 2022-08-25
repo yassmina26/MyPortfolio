@@ -5,7 +5,6 @@ const projectSchema = new mongoose.Schema({
 
     product_id:{
         type:String,
-        unique:true,
         required:true
     },
     title:{
@@ -15,11 +14,8 @@ const projectSchema = new mongoose.Schema({
     description:{
         type:String,
         required:true
-    },
-    images:{
-        type: Object,
-        required: true
     }
+  
     
 
 })
