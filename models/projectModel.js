@@ -11,7 +11,7 @@ const projectSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    Gitlink:{
+    gitlink:{
         type:String,
         required: true
     }

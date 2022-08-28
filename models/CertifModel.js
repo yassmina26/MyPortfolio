@@ -10,7 +10,7 @@ const certifSchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    GitLink:{
+    certLink:{
         type:String,
         required: true
     }
