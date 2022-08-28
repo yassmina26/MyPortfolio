@@ -2,7 +2,6 @@ const router = require("express").Router();
 const projectSchema = require('../models/projectModel');
 
 
-
 // get project
 router.get("/projects", async (req, res) => {
     try {
