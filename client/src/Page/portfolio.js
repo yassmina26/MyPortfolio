@@ -12,11 +12,26 @@ import { FiLinkedin, FiGithub} from "react-icons/fi";
 import { FaAws, FaDocker} from "react-icons/fa";
 import { SiApachetomcat, SiVagrant, SiAnsible, SiMysql, SiVirtualbox} from "react-icons/si";
 import { DiJenkins} from "react-icons/di";
-
+import getAbout from "../Service/About";
+import getProjects from "../Service/Projects";
+import getCert from "../Service/Certifs";
 
 export const Portfolio = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [aboutData, setAboutData] = useState([]);
+  const [certData, setCertData] = useState([]);
+  const [ProjectsData, setProjectsData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => { const about = await getAbout();
+      const project = await getProjects();
+      const cert = await getCert();
+    setAboutData(about) 
+    setProjectsData(project)
+    setCertData(cert)
+  }
+    fetchData()
+  }, [] )
+console.log(certData,ProjectsData,aboutData)
   return (
     <>
       <div className="porfolio">
@@ -70,23 +85,17 @@ export const Portfolio = () => {
               <img src={aboutImg} alt="" />
             </div>
             <div className="text-area2">
-              <p className="p1">
-                <span>
+            <span>
                   My name is <strong> Yassmine Boukari.</strong> Currently a
                   student at the National School Of Applied Sciences in
-                  Marrakech.
+                  Marrakech. 
                   <br />
-                </span>
-                <span>
-                  I’m looking to start a new career and develop my skills in the{" "}
-                  <strong> Cloud Computing </strong> industry.
-                </span>
+                </span> 
+              {
+                aboutData.length && <p className="p1" style={{marginTop: 19}}>
+                {aboutData[0].text}
               </p>
-              <p className="p2" style={{ marginTop: 20 }}>
-                With the combination of a positive mindset and the right
-                skill-set, I would feel very thrilled to contribute to building
-                innovative and adapted solutions.
-              </p>
+              }
             </div>
           </div>
         </div>
@@ -94,15 +103,17 @@ export const Portfolio = () => {
           <h1 className="Heading">Projects.</h1>
           <div className="project-container" id="Projects">
             <div className="projets">
-              <div className="description-part1">
+              {
+                ProjectsData.length && ProjectsData.map(project => (
+                  <div className="description-part1">
                 <div className="heading">
-                  <p className="Ai">Artificial Intelligence.</p>
+                  <p className="Ai">{project.title}</p>
                   <p className="des">
-                    Built a “Teachable Machine” for image classification.{" "}
+                    {project.description}
                   </p>
                   <a
                     className="show_more"
-                    href="https://github.com/yassmina26/Teachable-machine"
+                    href={project.gitLink}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -114,48 +125,8 @@ export const Portfolio = () => {
                   </a>
                 </div>
               </div>
-
-              <div className="description-part1">
-                <div className="heading">
-                  <p className="Ai">Automation. </p>
-                  <p className="des">
-                    Automated setup of 3 tier application locally.{" "}
-                  </p>
-                  <a
-                    className="show_more"
-                    href="https://github.com/yassmina26/Setup-Web-Application-Stack"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span style={{ color: "#ffbb45" }}>Show more</span>
-                    <HiArrowNarrowRight
-                      color="#ffbb45"
-                      style={{ marginLeft: 5 }}
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className="description-part1">
-                <div className="heading">
-                  <p className="Ai">Cloud Implementation. </p>
-                  <p className="des">
-                    Lift & shift web application on AWS cloud.
-                  </p>
-                  <a
-                    className="show_more"
-                    href="https://google.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span style={{ color: "#ffbb45" }}>Show more</span>
-                    <HiArrowNarrowRight
-                      color="#ffbb45"
-                      style={{ marginLeft: 5 }}
-                    />
-                  </a>
-                </div>
-              </div>
+                 ))
+              }
             </div>
 
             <div className="right-projects">
@@ -183,51 +154,33 @@ export const Portfolio = () => {
 
           <div className="hero-section-cer ">
             <div className="certifications">
-              <div className=" certification">
-                <div className="cert-img">
-                  <img src={certficationImg1} alt="" />
+              {
+                certData.length && certData.map(cert => (
+                  <div className=" certification">
+                  <div className="cert-img">
+                    <img src={cert.image} alt="" />
+                  </div>
+                  <div className="Text">
+                    <span className="text">
+                      {cert.title}
+                    </span>
+                    <a
+                      className="show_more"
+                      href={cert.certLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span style={{ color: "#ffbb45" }}>Show more</span>
+                      <HiArrowNarrowRight
+                        color="#ffbb45"
+                        style={{ marginLeft: 5 }}
+                      />
+                    </a>
+                  </div>
                 </div>
-                <div className="Text">
-                  <span className="text">
-                    Building Cloud-Native and Multicloud Applications.
-                  </span>
-                  <a
-                    className="show_more"
-                    href="https://www.credly.com/badges/e89ca46c-6db7-44ae-a9c3-397733feb336/public_url"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span style={{ color: "#ffbb45" }}>Show more</span>
-                    <HiArrowNarrowRight
-                      color="#ffbb45"
-                      style={{ marginLeft: 5 }}
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" certification">
-                <div className="cert-img">
-                  <img src={certficationImg2} alt="" />
-                </div>
-                <div className="Text">
-                  <span className="text">
-                    Docker Essentials: A Developer Introduction.
-                  </span>
-                  <a
-                    className="show_more"
-                    href="https://www.credly.com/badges/6ce9696f-efd8-4a9a-8bc7-d87242718f56/public_url"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span style={{ color: "#ffbb45" }}>Show more</span>
-                    <HiArrowNarrowRight
-                      color="#ffbb45"
-                      style={{ marginLeft: 5 }}
-                    />
-                  </a>
-                </div>
-              </div>
+                ))
+              }
+            
             </div>
           </div>
 
