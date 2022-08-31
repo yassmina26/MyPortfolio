@@ -2,7 +2,7 @@ const { application } = require('express');
 const { async } = require('rxjs');
 
 const router = require('express').Router();
-const { getCertif, addCertif, getCertifId, updateCertifId, delCertifId} = require('../Controllers/CertifCtr');
+const { getCertif, addCertif, getCertifId, updateCertifId, delCertifId} = require('../Controllers/certifCtr');
 
 
 // get request in order to get the education 
