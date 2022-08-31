@@ -32,7 +32,7 @@ mongoose.connect(URI, {
 // About route 
 app.use('/', require('./routes/aboutRoute'));
 // Certif route
-app.use('/', require('./routes/CertifRoute'));
+app.use('/', require('./routes/certifRoute'));
 // Project route
 app.use('/', require('./routes/projectRoute'));
 
