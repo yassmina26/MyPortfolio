@@ -1,6 +1,6 @@
 const getAbout = async () => { 
 
-    try{ const resp = await fetch(' http://localhost:5000/about '); 
+    try{ const resp = await fetch(' https://portfolio.yassminebouk.site/about '); 
     const respJson = await resp.json();
      return respJson; }
 
