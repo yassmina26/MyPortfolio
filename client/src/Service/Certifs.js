@@ -1,6 +1,6 @@
 const getCert = async () => { 
 
-    try{ const resp = await fetch(' https://portfolioo.yassminebouk.site/certifications '); 
+    try{ const resp = await fetch(' https://portfolio.yassminebouk.site/certifications '); 
     const respJson = await resp.json();
      return respJson; }
 
